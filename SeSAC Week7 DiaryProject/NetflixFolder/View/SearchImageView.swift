@@ -15,6 +15,7 @@ class SearchImageView: BaseView {
         let layout = UICollectionViewLayout()
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.backgroundColor = .orange
+        
         return view
     }()
     

@@ -18,6 +18,7 @@
 		F61690C528B2729800F513DC /* SearchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C428B2729800F513DC /* SearchImageView.swift */; };
 		F61690C728B272AB00F513DC /* MainImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C628B272AB00F513DC /* MainImageViewController.swift */; };
 		F61690C928B272BA00F513DC /* SearchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C828B272BA00F513DC /* SearchImageViewController.swift */; };
+		F61690CB28B2E48300F513DC /* SearchImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690CA28B2E48300F513DC /* SearchImageCollectionViewCell.swift */; };
 		F6D23D1728AF8B3D00BE9D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D1628AF8B3D00BE9D93 /* AppDelegate.swift */; };
 		F6D23D1928AF8B3D00BE9D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D1828AF8B3D00BE9D93 /* SceneDelegate.swift */; };
 		F6D23D1E28AF8B3D00BE9D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D23D1C28AF8B3D00BE9D93 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		F61690C428B2729800F513DC /* SearchImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageView.swift; sourceTree = "<group>"; };
 		F61690C628B272AB00F513DC /* MainImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageViewController.swift; sourceTree = "<group>"; };
 		F61690C828B272BA00F513DC /* SearchImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageViewController.swift; sourceTree = "<group>"; };
+		F61690CA28B2E48300F513DC /* SearchImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6D23D1328AF8B3D00BE9D93 /* SeSAC Week7 DiaryProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC Week7 DiaryProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D23D1628AF8B3D00BE9D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D23D1828AF8B3D00BE9D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				F6D23D3C28AF93C900BE9D93 /* LoginView.swift */,
 				F61690C228B2728900F513DC /* MainImageView.swift */,
 				F61690C428B2729800F513DC /* SearchImageView.swift */,
+				F61690CA28B2E48300F513DC /* SearchImageCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				F61690C128B2661000F513DC /* EndPoint.swift in Sources */,
 				F61690C328B2728900F513DC /* MainImageView.swift in Sources */,
+				F61690CB28B2E48300F513DC /* SearchImageCollectionViewCell.swift in Sources */,
 				F61690BF28B2651A00F513DC /* APIManager.swift in Sources */,
 				F6D23D3F28AF93D000BE9D93 /* LoginViewController.swift in Sources */,
 				F6D23D3B28AF93BF00BE9D93 /* MainViewController.swift in Sources */,
