@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sfz-p3-0Tv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LU1-ej-4vt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -37,6 +37,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptq-bu-QMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="146"/>
+        </scene>
+        <!--Main Image View Controller-->
+        <scene sceneID="NX7-tg-AL8">
+            <objects>
+                <viewController storyboardIdentifier="MainImageViewController" id="LU1-ej-4vt" customClass="MainImageViewController" customModule="SeSAC_Week7_DiaryProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0nS-Kx-ylo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qpy-Db-Tqc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6t-qO-ZDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864" y="154"/>
+        </scene>
+        <!--Search Image View Controller-->
+        <scene sceneID="U4Y-VG-qWv">
+            <objects>
+                <viewController storyboardIdentifier="SearchImageViewController" id="bY6-gr-vbZ" customClass="SearchImageViewController" customModule="SeSAC_Week7_DiaryProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7h8-fr-Im5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="svJ-bH-OlB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nkl-K3-d3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640" y="162"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NEj-AD-pHe">
+            <objects>
+                <viewController id="TiA-dO-u8s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UJL-WD-sfB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0Q-Wf-ayx">
+                                <rect key="frame" x="174" y="410" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="RIF-42-5Nd" kind="push" id="R2t-dc-T0O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FFD-91-tbW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Lz-SJ-nrd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCQ-d6-hlB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="836"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fXI-8W-vm6">
+            <objects>
+                <viewController id="RIF-42-5Nd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4in-GQ-Tof">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jGA-3C-m3j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7VJ-3J-jG8">
+                        <barButtonItem key="rightBarButtonItem" title="선택" id="Syp-J6-9ha"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSC-70-fvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1934" y="861"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K9H-yG-75g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YXi-yT-c9D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NCN-Ru-bbe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TiA-dO-u8s" kind="relationship" relationship="rootViewController" id="3vg-37-QNU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQf-6i-uLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="844"/>
         </scene>
     </scenes>
     <resources>

@@ -112,7 +112,7 @@ class MainView: BaseView {
         let view = UILabel()
         view.text = "미리보기"
         view.textColor = .white
-        view.font = .systemFont(ofSize: 18, weight: .bold)
+        view.font = .systemFont(ofSize: 20, weight: .bold)
         return view
     }()
     
@@ -143,7 +143,7 @@ class MainView: BaseView {
         }
         tvProgramButton.snp.makeConstraints { make in
             make.centerY.equalTo(netflixLogoButton.snp.centerY)
-            make.leading.equalTo(netflixLogoButton.snp.trailing).offset(40)
+            make.leading.equalTo(netflixLogoButton.snp.trailing).offset(50)
         }
         movieButton.snp.makeConstraints { make in
             make.centerY.equalTo(netflixLogoButton.snp.centerY)
@@ -156,7 +156,7 @@ class MainView: BaseView {
         }
         preViewImage2.snp.makeConstraints { make in
             make.centerX.equalTo(self)
-            make.bottom.equalTo(self.snp.bottom).offset(-30)
+            make.bottom.equalTo(self.snp.bottom).offset(-25)
             make.width.height.equalTo(self.snp.width).multipliedBy(0.3)
         }
         preViewImage1.snp.makeConstraints { make in
@@ -173,7 +173,9 @@ class MainView: BaseView {
         }
         previewLabel.snp.makeConstraints { make in
             make.leading.equalTo(self.snp.leading).offset(12)
-            make.bottom.equalTo(preViewImage1.snp.top).offset(-12)
+            make.bottom.equalTo(preViewImage1.snp.top).offset(-8)
+            make.top.greaterThanOrEqualTo(checkImageButton.snp.bottom).offset(8)
+            make.trailing.greaterThanOrEqualTo(self.snp.trailing).offset(-12)
         }
         playButton.snp.makeConstraints { make in
             make.centerX.equalTo(self.snp.centerX)

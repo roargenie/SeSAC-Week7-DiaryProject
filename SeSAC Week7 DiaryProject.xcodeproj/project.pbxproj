@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61690B228B2610B00F513DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F61690B128B2610B00F513DC /* Alamofire */; };
+		F61690B528B2611600F513DC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F61690B428B2611600F513DC /* SwiftyJSON */; };
+		F61690B828B2612200F513DC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F61690B728B2612200F513DC /* Kingfisher */; };
+		F61690BA28B264E200F513DC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F61690B928B264E200F513DC /* .gitignore */; };
+		F61690BD28B2650F00F513DC /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690BC28B2650F00F513DC /* Key.swift */; };
+		F61690BF28B2651A00F513DC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690BE28B2651A00F513DC /* APIManager.swift */; };
+		F61690C128B2661000F513DC /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C028B2661000F513DC /* EndPoint.swift */; };
+		F61690C328B2728900F513DC /* MainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C228B2728900F513DC /* MainImageView.swift */; };
+		F61690C528B2729800F513DC /* SearchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C428B2729800F513DC /* SearchImageView.swift */; };
+		F61690C728B272AB00F513DC /* MainImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C628B272AB00F513DC /* MainImageViewController.swift */; };
+		F61690C928B272BA00F513DC /* SearchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61690C828B272BA00F513DC /* SearchImageViewController.swift */; };
 		F6D23D1728AF8B3D00BE9D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D1628AF8B3D00BE9D93 /* AppDelegate.swift */; };
 		F6D23D1928AF8B3D00BE9D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D1828AF8B3D00BE9D93 /* SceneDelegate.swift */; };
 		F6D23D1E28AF8B3D00BE9D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D23D1C28AF8B3D00BE9D93 /* Main.storyboard */; };
@@ -20,9 +31,18 @@
 		F6D23D3B28AF93BF00BE9D93 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D3A28AF93BF00BE9D93 /* MainViewController.swift */; };
 		F6D23D3D28AF93C900BE9D93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D3C28AF93C900BE9D93 /* LoginView.swift */; };
 		F6D23D3F28AF93D000BE9D93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D3E28AF93D000BE9D93 /* LoginViewController.swift */; };
+		F6D23D4228B25BDD00BE9D93 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D23D4128B25BDD00BE9D93 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61690B928B264E200F513DC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F61690BC28B2650F00F513DC /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		F61690BE28B2651A00F513DC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F61690C028B2661000F513DC /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		F61690C228B2728900F513DC /* MainImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageView.swift; sourceTree = "<group>"; };
+		F61690C428B2729800F513DC /* SearchImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageView.swift; sourceTree = "<group>"; };
+		F61690C628B272AB00F513DC /* MainImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageViewController.swift; sourceTree = "<group>"; };
+		F61690C828B272BA00F513DC /* SearchImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageViewController.swift; sourceTree = "<group>"; };
 		F6D23D1328AF8B3D00BE9D93 /* SeSAC Week7 DiaryProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC Week7 DiaryProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D23D1628AF8B3D00BE9D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D23D1828AF8B3D00BE9D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +57,7 @@
 		F6D23D3A28AF93BF00BE9D93 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F6D23D3C28AF93C900BE9D93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F6D23D3E28AF93D000BE9D93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F6D23D4128B25BDD00BE9D93 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,16 +65,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61690B828B2612200F513DC /* Kingfisher in Frameworks */,
+				F61690B528B2611600F513DC /* SwiftyJSON in Frameworks */,
 				F6D23D2C28AF8D4500BE9D93 /* SnapKit in Frameworks */,
+				F61690B228B2610B00F513DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61690BB28B2650500F513DC /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				F61690BC28B2650F00F513DC /* Key.swift */,
+			);
+			path = Key;
+			sourceTree = "<group>";
+		};
 		F6D23D0A28AF8B3D00BE9D93 = {
 			isa = PBXGroup;
 			children = (
+				F61690B928B264E200F513DC /* .gitignore */,
 				F6D23D1528AF8B3D00BE9D93 /* SeSAC Week7 DiaryProject */,
 				F6D23D1428AF8B3D00BE9D93 /* Products */,
 			);
@@ -84,6 +117,8 @@
 		F6D23D2D28AF8D6F00BE9D93 /* NetflixFolder */ = {
 			isa = PBXGroup;
 			children = (
+				F61690BB28B2650500F513DC /* Key */,
+				F6D23D4028B25BD500BE9D93 /* Model */,
 				F6D23D3728AF936A00BE9D93 /* Controllers */,
 				F6D23D3628AF934000BE9D93 /* View */,
 				F6D23D3228AF91D800BE9D93 /* ViewModel */,
@@ -114,6 +149,8 @@
 			children = (
 				F6D23D3828AF93B400BE9D93 /* MainView.swift */,
 				F6D23D3C28AF93C900BE9D93 /* LoginView.swift */,
+				F61690C228B2728900F513DC /* MainImageView.swift */,
+				F61690C428B2729800F513DC /* SearchImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,8 +160,20 @@
 			children = (
 				F6D23D3A28AF93BF00BE9D93 /* MainViewController.swift */,
 				F6D23D3E28AF93D000BE9D93 /* LoginViewController.swift */,
+				F61690C628B272AB00F513DC /* MainImageViewController.swift */,
+				F61690C828B272BA00F513DC /* SearchImageViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F6D23D4028B25BD500BE9D93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6D23D4128B25BDD00BE9D93 /* Model.swift */,
+				F61690BE28B2651A00F513DC /* APIManager.swift */,
+				F61690C028B2661000F513DC /* EndPoint.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +194,9 @@
 			name = "SeSAC Week7 DiaryProject";
 			packageProductDependencies = (
 				F6D23D2B28AF8D4500BE9D93 /* SnapKit */,
+				F61690B128B2610B00F513DC /* Alamofire */,
+				F61690B428B2611600F513DC /* SwiftyJSON */,
+				F61690B728B2612200F513DC /* Kingfisher */,
 			);
 			productName = "SeSAC Week7 DiaryProject";
 			productReference = F6D23D1328AF8B3D00BE9D93 /* SeSAC Week7 DiaryProject.app */;
@@ -176,6 +228,9 @@
 			mainGroup = F6D23D0A28AF8B3D00BE9D93;
 			packageReferences = (
 				F6D23D2A28AF8D4500BE9D93 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F61690B028B2610B00F513DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F61690B328B2611600F513DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				F61690B628B2612200F513DC /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = F6D23D1428AF8B3D00BE9D93 /* Products */;
 			projectDirPath = "";
@@ -191,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61690BA28B264E200F513DC /* .gitignore in Resources */,
 				F6D23D2328AF8B4100BE9D93 /* LaunchScreen.storyboard in Resources */,
 				F6D23D2028AF8B4100BE9D93 /* Assets.xcassets in Resources */,
 				F6D23D1E28AF8B3D00BE9D93 /* Main.storyboard in Resources */,
@@ -204,15 +260,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61690C128B2661000F513DC /* EndPoint.swift in Sources */,
+				F61690C328B2728900F513DC /* MainImageView.swift in Sources */,
+				F61690BF28B2651A00F513DC /* APIManager.swift in Sources */,
 				F6D23D3F28AF93D000BE9D93 /* LoginViewController.swift in Sources */,
 				F6D23D3B28AF93BF00BE9D93 /* MainViewController.swift in Sources */,
+				F61690BD28B2650F00F513DC /* Key.swift in Sources */,
 				F6D23D3528AF92E000BE9D93 /* PreviewImage.swift in Sources */,
+				F61690C928B272BA00F513DC /* SearchImageViewController.swift in Sources */,
 				F6D23D3928AF93B400BE9D93 /* MainView.swift in Sources */,
 				F6D23D1728AF8B3D00BE9D93 /* AppDelegate.swift in Sources */,
+				F6D23D4228B25BDD00BE9D93 /* Model.swift in Sources */,
+				F61690C528B2729800F513DC /* SearchImageView.swift in Sources */,
 				F6D23D1928AF8B3D00BE9D93 /* SceneDelegate.swift in Sources */,
 				F6D23D2F28AF8E4400BE9D93 /* BaseViewController.swift in Sources */,
 				F6D23D3D28AF93C900BE9D93 /* LoginView.swift in Sources */,
 				F6D23D3128AF91D000BE9D93 /* BaseView.swift in Sources */,
+				F61690C728B272AB00F513DC /* MainImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +500,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F61690B028B2610B00F513DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F61690B328B2611600F513DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F61690B628B2612200F513DC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		F6D23D2A28AF8D4500BE9D93 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -447,6 +535,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F61690B128B2610B00F513DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61690B028B2610B00F513DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F61690B428B2611600F513DC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61690B328B2611600F513DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		F61690B728B2612200F513DC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61690B628B2612200F513DC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		F6D23D2B28AF8D4500BE9D93 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F6D23D2A28AF8D4500BE9D93 /* XCRemoteSwiftPackageReference "SnapKit" */;
