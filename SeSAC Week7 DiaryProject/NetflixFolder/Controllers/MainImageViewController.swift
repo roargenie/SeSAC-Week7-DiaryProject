@@ -1,12 +1,12 @@
 
 
 import UIKit
-
+import RealmSwift
 
 class MainImageViewController: BaseViewController {
     
     var mainView = MainImageView()
-    
+    let localRealm = try! Realm()  // Realm 테이블에 데이터를 CRUD할 때, Realm 테이블 경로에 접근 하기위해
     
     override func loadView() {
         self.view = mainView
@@ -15,7 +15,8 @@ class MainImageViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "메인화면"
-        mainView.imageChangeButton.addTarget(self, action: #selector(imageChangeButtonTapped), for: .touchUpInside)
+        configure()
+        print("Realm is located at:", localRealm.configuration.fileURL!)
     }
     
     @objc func imageChangeButtonTapped() {
@@ -23,6 +24,17 @@ class MainImageViewController: BaseViewController {
         //let nav = UINavigationController(rootViewController: vc)
         
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func sampleButtonTapped() {
+        let task = UserDiary(diaryTitle: "ㄱ오늘의 일기\(Int.random(in: 1...1000))", diaryContent: "일기 테스트 내용", diaryDate: Date(), regdate: Date(), photo: nil) // => Record
+        
+        try! localRealm.write {
+            localRealm.add(task) // Create
+            print("Realm Succeed")
+            dismiss(animated: true)
+        }
+        
     }
     
 //    func setNavigationBar() {
@@ -34,7 +46,8 @@ class MainImageViewController: BaseViewController {
 //    }
     
     override func configure() {
-        
+        mainView.imageChangeButton.addTarget(self, action: #selector(imageChangeButtonTapped), for: .touchUpInside)
+        mainView.sampleButton.addTarget(self, action: #selector(sampleButtonTapped), for: .touchUpInside)
     }
     
     override func setConstraints() {

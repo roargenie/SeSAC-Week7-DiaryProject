@@ -12,10 +12,10 @@ class SearchImageView: BaseView {
     }()
     
     let collectionView: UICollectionView = {
-        let layout = UICollectionViewLayout()
-        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        //let layout = UICollectionViewLayout()
+        let view = UICollectionView(frame: .zero, collectionViewLayout: imageCollectionViewLayout())
         view.backgroundColor = .orange
-        
+        view.register(SearchImageCollectionViewCell.self, forCellWithReuseIdentifier: SearchImageCollectionViewCell.identifier)
         return view
     }()
     
@@ -45,6 +45,17 @@ class SearchImageView: BaseView {
             make.trailing.equalTo(self.snp.trailing)
             make.bottom.equalTo(self.snp.bottom)
         }
+    }
+    
+    static func imageCollectionViewLayout() -> UICollectionViewFlowLayout {
+        let layout = UICollectionViewFlowLayout()
+        let deviceWidth: CGFloat = UIScreen.main.bounds.width
+        let itemWidth: CGFloat = (deviceWidth - 5) / 2
+        layout.minimumLineSpacing = 5
+        layout.minimumInteritemSpacing = 5
+        layout.itemSize = CGSize(width: itemWidth, height: itemWidth)
+        layout.scrollDirection = .vertical
+        return layout
     }
     
     

@@ -21,6 +21,11 @@ class MainImageView: BaseView {
         return view
     }()
     
+    let sampleButton: UIButton = {
+        let view = UIButton()
+        view.backgroundColor = .green
+        return view
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,7 +38,7 @@ class MainImageView: BaseView {
     
     
     override func configureUI() {
-        [imageView, imageChangeButton].forEach { self.addSubview($0) }
+        [imageView, imageChangeButton, sampleButton].forEach { self.addSubview($0) }
         
     }
     
@@ -47,7 +52,10 @@ class MainImageView: BaseView {
             make.bottom.equalTo(imageView.snp.bottom).offset(-10)
             make.width.height.equalTo(50)
         }
-        
+        sampleButton.snp.makeConstraints { make in
+            make.width.height.equalTo(60)
+            make.trailing.top.equalTo(self.safeAreaLayoutGuide)
+        }
     }
     
 }
